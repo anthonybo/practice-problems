@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice30</title>
+    <script type="text/javascript">
+        function random_range(start_num, end_num) {
+            if ( Array.isArray(start_num) && end_num === undefined ) {
+                // console.log('Array: ' + start_num + ' ' + start_num.length);
+                var randomElement = start_num[ Math.floor(Math.random() * start_num.length) ];
+                return randomElement;
+
+            } else {
+                var randomNumber = Math.floor((Math.random() * end_num) + start_num);
+                return randomNumber;
+            }
+
+        }
+
+        var newNum = random_range(2,15);
+        console.log(newNum);
+        var newNum = random_range(1,100);
+        console.log(newNum);
+        var newNum = random_range( ['a','b','c','d','e'] );
+        console.log(newNum);
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

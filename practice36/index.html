@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice#36</title>
+    <script type="text/javascript">
+
+        function find_vowels(str) {
+            var vowels = 'aeiou';
+            var str_of_vowels = '';
+            // console.log(str);
+
+            for (var index = 0; index < str.length; index++) {
+                // console.log(str[index]);
+               for(var vowel_index = 0; vowel_index < vowels.length; vowel_index++) {
+                   if (str[index] === vowels[vowel_index]){
+                        // console.log(vowels[vowel_index]);
+                        str_of_vowels += vowels[vowel_index];
+                   }
+               }
+
+            }
+            return str_of_vowels;
+        }
+
+        var str_of_vowels = find_vowels("four score and seven years ago");
+        console.log(str_of_vowels);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

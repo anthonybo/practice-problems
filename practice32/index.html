@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice#32</title>
+    <script type="text/javascript">
+        function find_middle_letters(str) {
+            if (str.length % 2) {
+                var half_of_string = str.length / 2;
+                half_of_string = parseInt(half_of_string);
+                // console.log('odd' + half_of_string);
+                // console.log(str[half_of_string]);
+                var middle_odd = str[half_of_string];
+                return middle_odd;
+
+            } else {
+                var half_of_string = str.length / 2;
+                // console.log('even' + half_of_string);
+                var middle_even = str[half_of_string-1] + str[half_of_string];
+                return middle_even;
+            }
+        }
+
+        var odd = find_middle_letters('seven');
+        console.log(odd);
+        var even = find_middle_letters('dish');
+        console.log(even);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
